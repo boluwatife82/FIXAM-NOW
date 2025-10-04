@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FixAmNow — Home Services (Demo)</title>
+    <link rel="stylesheet" href="fixutilities.css" />
+    <link rel="stylesheet" href="fixstyles.css" />
+  </head>
+  <body>
+    <div id="app" class="app-root">
+      <!-- Navbar injected by components -->
+      <header id="top" role="banner"></header>
+      <main id="main" role="main"></main>
+      <div id="modals"></div>
+      <div id="toasts" aria-live="polite" aria-atomic="true"></div>
+      <footer id="footer" role="contentinfo"></footer>
+    </div>
+
+    <!-- Core utilities -->
+
+    <!-- Core utilities -->
+    <script type="module" src="fixutils.js"></script>
+    <script type="module" src="fixvalidators.js"></script>
+    <script type="module" src="fixstate.js"></script>
+
+    <!-- Always-visible layout -->
+    <script type="module" src="fixnavbar.js"></script>
+    <script type="module" src="fixfooter.js"></script>
+
+    <!-- Toast + Modal -->
+    <script type="module" src="fixtoast.js"></script>
+    <script type="module" src="fixmodal.js"></script>
+
+    <!-- Pages (MUST come before router so they exist) -->
+    <script type="module" src="fixhome.js"></script>
+    <script type="module" src="fixbooking.js"></script>
+    <script type="module" src="fixhistory.js"></script>
+    <script type="module" src="fixprofile.js"></script>
+    <script type="module" src="fixlogin.js"></script>
+    <script type="module" src="fixsignup.js"></script>
+    <script type="module" src="fixnotfound.js"></script>
+
+    <!-- Router loads LAST -->
+    <script type="module" src="fixrouter.js"></script>
+  </body>
+</html>
