@@ -1,5 +1,5 @@
-import { Auth } from "./tife/fixauth.js";
-import { renderNavbar } from "./tife/fixnavbar.js";
+import { Auth } from "./fixauth.js";
+import { renderNavbar } from "./fixnavbar.js";
 
 const app = document.getElementById("main");
 

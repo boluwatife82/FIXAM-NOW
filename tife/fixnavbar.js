@@ -1,7 +1,7 @@
 import { navigate } from "./fixrouter.js";
-import { renderLogin } from "./tife/fixlogin.js";
-import { renderSignup } from "./fixsignup.js";
-import { Auth } from "./tife/fixauth.js";
+import { renderLogin } from "./fixlogin.js";
+import { renderSignup } from "../fixsignup.js";
+import { Auth } from "./fixauth.js";
 
 const header = document.getElementById("top");
 

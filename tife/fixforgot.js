@@ -178,12 +178,12 @@ export function renderForgot() {
 
     setTimeout(() => {
       // navigate back to login UI - import dynamically to avoid circular import problems
-      import("./fixlogin.js").then((m) => m.renderLogin());
+      import("../fixlogin.js").then((m) => m.renderLogin());
     }, 900);
   });
 
   document.getElementById("backToLogin").addEventListener("click", (e) => {
     e.preventDefault();
-    import("./fixlogin.js").then((m) => m.renderLogin());
+    import("../fixlogin.js").then((m) => m.renderLogin());
   });
 }
