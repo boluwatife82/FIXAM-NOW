@@ -6,7 +6,7 @@ import { renderProfile } from "./fixprofile.js";
 import { renderMap } from "./fixmap.js";
 import { renderNotFound } from "./fixnotfound.js";
 import { renderAbout } from "./fixaboutus.js";
-import { renderServices } from "../fixservices.js";
+import { renderServices } from "./fixservices.js";
 import { renderContact } from "./fixcontact.js";
 
 // ✅ Central navigation controller

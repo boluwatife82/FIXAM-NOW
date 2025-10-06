@@ -54,12 +54,12 @@ export function renderSignup(onSuccess) {
     alert("Signup successful! Welcome to FixAmNow 🚀");
 
     // ✅ Redirect to home
-    import("./tife/fixhome.js").then((m) => m.renderHome());
+    import("./fixhome.js").then((m) => m.renderHome());
   });
 
   // Switch to login
   document.getElementById("goLogin").addEventListener("click", (e) => {
     e.preventDefault();
-    import("./tife/fixlogin.js").then((m) => m.renderLogin(onSuccess));
+    import("./fixlogin.js").then((m) => m.renderLogin(onSuccess));
   });
 }

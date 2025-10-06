@@ -29,7 +29,7 @@ export function renderLogin(onSuccess) {
   // Forgot password link
   document.getElementById("forgotLink").addEventListener("click", (e) => {
     e.preventDefault();
-    import("./tife/fixforgot.js").then((m) => m.renderForgot());
+    import("./fixforgot.js").then((m) => m.renderForgot());
   });
 
   // Login form submission
@@ -56,7 +56,7 @@ export function renderLogin(onSuccess) {
     if (onSuccess) onSuccess(user);
 
     // ✅ Redirect to home
-    import("./tife/fixhome.js").then((m) => m.renderHome());
+    import("./fixhome.js").then((m) => m.renderHome());
   });
 
   // Switch to signup page

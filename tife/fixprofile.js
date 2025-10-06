@@ -1,5 +1,5 @@
-import { Auth } from "./fixauth.js";
-import { renderNavbar } from "./fixnavbar.js";
+import { Auth } from "../fixauth.js";
+import { renderNavbar } from "../fixnavbar.js";
 
 const app = document.getElementById("main");
 

@@ -1,5 +1,4 @@
-/* General reset */
-* {
+General reset * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -150,13 +149,14 @@ header {
   color: orange;
 }
 /* Mobile responsiveness */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .nav-links {
     flex-direction: column; /* stack links vertically */
-    gap: 8px; /* smaller spacing */
-    align-items: flex-start;
-  }
-}
+/* gap: 8px; /* smaller spacing */
+/* align-items: flex-start; */
+/* } */
+*/
+/* } */ */
 
 /* ========================
    GENERAL PAGE STYLING
@@ -1235,5 +1235,343 @@ h1 span {
 @media (max-width: 600px) {
   #locationInput {
     width: 100%;
+  }
+}
+
+/* ============================= */
+/* 📱 MOBILE RESPONSIVE DESIGN   */
+/* ============================= */
+
+/* For phones and small screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* Services Section */
+  .service-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .service-card {
+    padding: 15px;
+    text-align: center;
+  }
+
+  /* Testimonials Section */
+  .testimonials {
+    padding: 30px 15px;
+  }
+
+  .testimonial-card {
+    font-size: 0.95rem;
+    padding: 15px;
+  }
+
+  .testimonial-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Call to Action */
+  .cta-book {
+    padding: 30px 10px;
+  }
+
+  .cta-book h2 {
+    font-size: 1.4rem;
+  }
+
+  .cta-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* For very small phones */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .service-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  button,
+  .btn-primary,
+  .btn-secondary,
+  .btn-card {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
+
+/* For very small phones */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .service-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  button,
+  .btn-primary,
+  .btn-secondary,
+  .btn-card {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
+/* ============================= */
+/* 🔹 GENERAL RESET + BASE STYLES */
+/* ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #fafafa;
+  color: #111;
+  line-height: 1.5;
+}
+
+/* ============================= */
+/* 🔹 NAVBAR / HEADER            */
+/* ============================= */
+
+.btn
+
+/* ============================= */
+/* 🔹 FOOTER                     */
+/* ============================= */
+footer {
+  background: #000;
+  color: #eee;
+  padding: 40px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+}
+
+.footer-col h4 {
+  color: orange;
+  margin-bottom: 10px;
+  font-size: 18px;
+  position: relative;
+}
+
+.footer-col h4::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background: orange;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin: 6px 0;
+}
+
+.footer-col ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: orange;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 10px;
+  width: 100%;
+}
+
+/* ============================= */
+/* 🔹 RESPONSIVE NAVBAR + FOOTER */
+/* ============================= */
+
+/* --- BASE NAVBAR --- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: black;
+  position: relative;
+  z-index: 100;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-left img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* --- HAMBURGER MENU --- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  transition: 0.3s;
+}
+
+/* Animation when open */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* --- NAV MENU --- */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* --- MOBILE VIEW --- */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    transition: all 0.3s ease;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-auth {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 }
